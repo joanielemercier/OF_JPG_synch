@@ -1,0 +1,3 @@
+ofxOsc
+ofxImageSequence-master
+ofxImageSequencePlayback
