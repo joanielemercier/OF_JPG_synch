@@ -11,13 +11,14 @@ void testApp::setup(){
     currFrame = 0;
     totalFrames = 300;
     lastFrameTimestamp = 0;
+    playbackFrameRate = 30;
     isPlaying = true;
 }
 
 
 void testApp::update(){
     if(isPlaying) {
-        if (ofGetElapsedTimeMillis() - lastFrameTimestamp > 1000/30) {
+        if (ofGetElapsedTimeMillis() - lastFrameTimestamp > 1000/playbackFrameRate) {
             lastFrameTimestamp = ofGetElapsedTimeMillis();
             currFrame++;
             if (currFrame > totalFrames) {

@@ -23,4 +23,6 @@ public:
     int totalFrames;
     int lastFrameTimestamp;
     bool isPlaying;
+    
+    int playbackFrameRate;
 };
